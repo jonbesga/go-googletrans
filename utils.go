@@ -8,7 +8,7 @@ func reverseMap(m map[string]string) map[string]string {
 	return n
 }
 
-func build_params(client string, query string, src string, dest string, token string) map[string]interface{} {
+func buildParams(client string, query string, src string, dest string, token string) map[string]interface{} {
 	params := map[string]interface{}{
 		"client": client,
 		"sl":     src,

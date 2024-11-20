@@ -29,7 +29,7 @@ func (t Translator) translate(text string, dest string, src string) ([]interface
 
 	q := req.URL.Query()
 
-	for k, v := range build_params("gtx", text, src, dest, "xxxx") {
+	for k, v := range buildParams("gtx", text, src, dest, "xxxx") {
 		switch val := v.(type) {
 		case string:
 			q.Add(k, val)
